@@ -1,0 +1,2 @@
+[2020-10-10 11:18:12,002]-[train_m2_new.py line:97]: Training start!  Img size:544,  Batchsize:4,  Number of workers:8 
+[2020-10-10 11:18:12,002]-[train_m2_new.py line:98]: Train datasets number is : 5896 
