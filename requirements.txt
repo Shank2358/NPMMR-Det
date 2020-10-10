@@ -1,0 +1,17 @@
+cudatoolkit==10.0.130
+cython==0.29.15
+dropblock==0.3.0
+lxml==4.5.1
+matplotlib==3.1.3
+numpy==1.17.3
+opencv-python==3.4.2
+pillow=7.0.0
+scikit-image==0.16.2
+tensorboardX==2.0
+torch==1.2.0
+torchvision==0.4.0
+tqdm==4.43.0
+
+in ./lib
+pycocotools==2.0
+dcnv2==0.1
