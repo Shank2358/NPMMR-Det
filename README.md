@@ -26,14 +26,14 @@ dcnv2==0.1 (In the ./lib folder)
 ...
 
 ## Installation
-1. git clone this repository  
+1. git clone this repository    
 2. Install the libraries in the ./lib folder  
-(1) DCNv2
-cd ./NPMMR-Det/lib/DCNv2/
-sh make.sh
-(2) pycocotools
-cd ./NPMMR-Det/lib/cocoapi/PythonAPI/
-sh make.sh
+(1) DCNv2  
+cd ./NPMMR-Det/lib/DCNv2/  
+sh make.sh  
+(2) pycocotools  
+cd ./NPMMR-Det/lib/cocoapi/PythonAPI/  
+sh make.sh  
 
 
 
