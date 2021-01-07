@@ -85,7 +85,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 话说回来，遥感圈的巨佬们真是有钱，什么ResNet/ResNeXt-152/201的模型都能跑，刷榜刷不过你们我认（穷的瑟瑟发抖），求求你们慢一点，实在是跟不上，都是要发论文恰饭的，学术圈要以和为贵啊。  
 NPMMR-Det这篇论文其实我自己很不满，谈不上多大创新，算一个增量性的工作，堆砌了一些花里胡哨的CV那边玩剩下的东西，欢迎多批评。入坑遥感目标检测半年多，看了一些论文，感觉大部分是在CV后面捡剩饭吃，拿过来换个数据就算创新，一些看起来明显就不讲武德的东西竟然能在遥感数据上涨点明显，这种炼丹技巧我也想学。至于各种train、val、test混合训练调参的我就不说啥了。  
 由于各种这样那样的我不可抗力的原因，NPMMR-Det论文里没能把带方向旋转框OBB的结果放上挺遗憾的，我觉得这也算遥感目标检测里面为数不多有特色的东西了，实际我做了这个实验在NPMMR-Det的基础上，DOTA数据集的mAP=73.83，我会尽快在这个仓库里更新的修改代码和训练好的权重。  
-！[image](https://github.com/Shank2358/NPMMR-Det/blob/master/figs_readme/DOTA_OBB.png)  
+![image](https://github.com/Shank2358/NPMMR-Det/blob/master/figs_readme/DOTA_OBB.png)  
 由于某度网盘会员到期了，训练好的模型只传了Google Drive，下个月发工资我就续上。
 
 
