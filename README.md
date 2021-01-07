@@ -36,7 +36,7 @@ cd ./NPMMR-Det/lib/cocoapi/PythonAPI/
 sh make.sh  
 
 ## Datasets
-1. [DOTA dataset](https://captain-whu.github.io/DOTA/dataset.html)
+1. [DOTA dataset](https://captain-whu.github.io/DOTA/dataset.html) and its [devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit)
 2. [DIOR dataset](https://pan.baidu.com/share/init?surl=w8iq2WvgXORb3ZEGtmRGOw), password: 554e  
 You need to write a script to convert them into the train.txt file required by this repository and put them in the ./data folder.  
 For the specific format of the train.txt file, see the example in the /data folder.
@@ -54,8 +54,21 @@ Modify ./cfg/cfg_npmmr.py, please refer to the comments in this file for details
 The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)  
 Put them in. /weight folder
 
-
 ### 最近很懒，以后慢慢写...
+
+## Notice
+The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
+The review speed is too slow!!!
+
+## Something New
+In addition to YOLOv3, YOLOv4 has also been initially implemented in this repository.  
+Some of the plug-and-play modules (many many Attentions, DGC, DynamicConv, PSPModule, SematicEmbbedBlock...) proposed in the latest papers are also collected in the ./model/plugandplay, you can use them and evaluate their performance freely. If it works well, please share your results here. Thank you.  
+
+## References
+https://github.com/Peterisfar/YOLOV3
+https://github.com/argusswift/YOLOv4-pytorch
+https://github.com/ultralytics/yolov5
+https://github.com/pprp/SimpleCVReproduction
 
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
