@@ -37,7 +37,7 @@ sh make.sh
 
 ## Datasets
 1. [DOTA dataset](https://captain-whu.github.io/DOTA/dataset.html)
-2. [DIOR dataset](https://pan.baidu.com/share/init?surl=w8iq2WvgXORb3ZEGtmRGOw) Password:554e  
+2. [DIOR dataset](https://pan.baidu.com/share/init?surl=w8iq2WvgXORb3ZEGtmRGOw), password:554e  
 You need to write a script to convert them into the train.txt file required by this repository and put them in the ./data folder.  
 For the specific format of the train.txt file, see the example in the /data folder.
 
