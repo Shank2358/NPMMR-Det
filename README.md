@@ -15,7 +15,7 @@ dcnv2==0.1 (In the ./lib folder)
 ...  
 The installation of other libraries can be carried out according to the prompts of pip/conda  
   
-2)For RTX30 GPUs （I currently only tested it on RTX3090 GPUs）  
+2) For RTX30 GPUs （I currently only tested it on RTX3090 GPUs）  
 cudatoolkit==11.0.221  
 numpy==1.17.5  
 opencv-python==4.4.0.46  
@@ -25,7 +25,7 @@ pycocotools==2.0 (In the ./lib folder)
 dcnv2==0.1 (In the ./lib folder)  
 ...
 
-### I'm lazy lately, and I will write later...
+### 最近很懒，以后慢慢写...
 
 ## Weights
 The pre-trained weights and trained models are available from  
