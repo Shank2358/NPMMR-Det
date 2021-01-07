@@ -28,8 +28,7 @@ dcnv2==0.1 (In the ./lib folder)
 ### 最近很懒，以后慢慢写...
 
 ## Weights
-The pre-trained weights and trained models are available from  
-https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing
+The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)
 
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
