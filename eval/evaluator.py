@@ -43,7 +43,7 @@ class Evaluator(object):
         i=0
         for img_ind in tqdm(img_inds):
             i=i+1
-            img_path = os.path.join(self.val_data_path, 'JPEGImages', img_ind+'.jpg')
+            img_path = os.path.join(self.val_data_path, 'JPEGImages', img_ind+'.jpg') ##DOTA数据集图片后缀是.png
             #目标： 直接改成读txt的文件名，每一行读取
             img = cv2.imread(img_path)
             bboxes_prd = self.get_bbox(img, multi_test, flip_test)

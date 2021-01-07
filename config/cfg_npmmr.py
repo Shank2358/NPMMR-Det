@@ -16,6 +16,27 @@ MODEL = {
         "ANCHORS_PER_SCLAE":3
         }
 
+''' 
+#DOTA dataset
+DATA = {"CLASSES":['plane',
+'baseball-diamond',
+'bridge',
+'ground-track-field',
+'small-vehicle',
+'large-vehicle',
+'ship',
+'tennis-court',
+'basketball-court',
+'storage-tank',  'soccer-ball-field', 'roundabout', 'harbor', 'swimming-pool', 'helicopter'], "NUM":15}
+
+MODEL = {"ANCHORS":[[(1.42, 2.30), (3.07, 3.50), (3.91, 1.60)],
+                    [(1.75, 4.24), (3.52, 2.27), (4.26, 4.16)],
+                    [(2.18, 5.46), (4.61, 3.74), (8.16, 8.54)]] ,# Anchors for big obj
+         "STRIDES":[8, 16, 32],
+         "ANCHORS_PER_SCLAE":3
+         }
+'''
+
 MAX_LABEL = 500
 SHOW_HEATMAP = False
 SCALE_FACTOR=2.0
