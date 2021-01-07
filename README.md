@@ -1,5 +1,6 @@
 # NPMMR-Det
 This is a PyTorch implementation of NPMMR-Det
+If you use it, please cite our paper and give this project a star. Thank you.
 
 ## Clone不Star， 都是耍流氓！
 
