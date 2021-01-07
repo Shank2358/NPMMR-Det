@@ -60,6 +60,9 @@ Put them in. /weight folder
 The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
 The review speed is too slow!!!
 
+If you have any questions, please ask in issues.  
+I will do my best to help you run this program successfully and get results close to those reported in the paper.  
+
 ## Something New
 In addition to YOLOv3, YOLOv4 has also been initially implemented in this repository.  
 Some of the plug-and-play modules (many many Attentions, DGC, DynamicConv, PSPModule, SematicEmbbedBlock...) proposed in the latest papers are also collected in the ./model/plugandplay, you can use them and evaluate their performance freely. If it works well, please share your results here. Thank you.  
