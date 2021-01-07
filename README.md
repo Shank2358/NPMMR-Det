@@ -1,6 +1,8 @@
 # NPMMR-Det
 This is a PyTorch implementation of NPMMR-Det
 
+##Clone不Star， 都是耍流氓！
+
 ## Environments
 Linux & Windows
 
@@ -54,13 +56,14 @@ Modify ./cfg/cfg_npmmr.py, please refer to the comments in this file for details
 The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)  
 Put them in. /weight folder
 
-### 最近很懒，以后慢慢写...
+### 最近很懒，以后慢慢写...有时间的话会出更详细的使用教程和每行代码的注释，先凑合着看吧
 
 ## Notice
 The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
 The review speed is too slow!!!
 
 If you have any questions, please ask in issues.  
+If you find bugs, please let me know and I will debug them in time. Thank you.
 I will do my best to help you run this program successfully and get results close to those reported in the paper.  
 
 ## Something New
