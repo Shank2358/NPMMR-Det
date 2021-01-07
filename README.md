@@ -58,8 +58,6 @@ Modify ./cfg/cfg_npmmr.py, please refer to the comments in this file for details
 The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)  
 Put them in. /weight folder
 
-### 最近很懒，以后慢慢写...有时间的话会出更详细的使用教程和每行代码的注释，先凑合着看吧
-
 ## Notice
 The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
 The review speed is too slow!!!
@@ -80,6 +78,9 @@ https://github.com/pprp/SimpleCVReproduction
 
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
+
+
+### 最近很懒，以后慢慢写...有时间的话会出更详细的使用教程和每行代码的注释，先凑合着看吧
 
 ## 一些碎碎念（外国人就不要看了...虽然可能本来也没什么人看）
 我初入遥感圈半年多，还在学习阶段，向各位大佬致敬，欢迎大家批评、交流，代码Bug请多包涵。  
