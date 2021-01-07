@@ -35,12 +35,27 @@ sh make.sh
 cd ./NPMMR-Det/lib/cocoapi/PythonAPI/  
 sh make.sh  
 
+## Datasets
+1. [DOTA dataset](https://captain-whu.github.io/DOTA/dataset.html)
+2. [DIOR dataset](https://pan.baidu.com/share/init?surl=w8iq2WvgXORb3ZEGtmRGOw) Password:554e  
+You need to write a script to convert them into the train.txt file required by this repository and put them in the ./data folder.  
+For the specific format of the train.txt file, see the example in the /data folder.
+
+## Usage Example
+1. train  
+python train.py  
+2. test  
+python test.py  
+
+# Parameter Settings
+Modify ./cfg/cfg_npmmr.py, please refer to the comments in this file for details
+
+## Weights
+The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)  
+Put them in. /weight folder
 
 
 ### 最近很懒，以后慢慢写...
-
-## Weights
-The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing)
 
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
