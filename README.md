@@ -65,10 +65,10 @@ In addition to YOLOv3, YOLOv4 has also been initially implemented in this reposi
 Some of the plug-and-play modules (many many Attentions, DGC, DynamicConv, PSPModule, SematicEmbbedBlock...) proposed in the latest papers are also collected in the ./model/plugandplay, you can use them and evaluate their performance freely. If it works well, please share your results here. Thank you.  
 
 ## References
-https://github.com/Peterisfar/YOLOV3
-https://github.com/argusswift/YOLOv4-pytorch
-https://github.com/ultralytics/yolov5
-https://github.com/pprp/SimpleCVReproduction
+https://github.com/Peterisfar/YOLOV3  
+https://github.com/argusswift/YOLOv4-pytorch  
+https://github.com/ultralytics/yolov5  
+https://github.com/pprp/SimpleCVReproduction  
 
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
