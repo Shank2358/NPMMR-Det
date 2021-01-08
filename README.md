@@ -1,5 +1,5 @@
 # NPMMR-Det
-This is a PyTorch implementation of NPMMR-Det.  
+This is a PyTorch implementation of NPMMR-Det, YOLOv3, and YOLOv4.  
 
 If you use it, please cite our paper and give this project a star. Thank you.
 
@@ -69,6 +69,17 @@ I will do my best to help you run this program successfully and get results clos
 ## Something New
 In addition to YOLOv3, YOLOv4 has also been initially implemented in this repository.  
 Some of the plug-and-play modules (many many Attentions, DGC, DynamicConv, PSPModule, SematicEmbbedBlock...) proposed in the latest papers are also collected in the ./model/plugandplay, you can use them and evaluate their performance freely. If it works well, please share your results here. Thank you.  
+
+## To Do
+(1) YOLOv4: Mosaic Data Augmentation    
+(2) Better attention visualization: CAM & Grad-CAM  
+(3) Guided Anchor  
+(4) Model Pruning  
+(5) ONNX & TensorRT  
+(6) Transformer Head  
+(7) More Backbones & pre-trained weights (SE-ResNet, ResNeSt, RegNet...)  
+(8) NAS  
+...  
 
 ## References
 https://github.com/Peterisfar/YOLOV3  
