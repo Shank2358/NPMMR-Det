@@ -60,7 +60,7 @@ Put them in. /weight folder
 
 ## Notice
 The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
-The review speed is too slow!!!
+The review speed is too slow!!! By the way, some reviewers have been struggling with some simple and well-known mathematical common sense (such as Taylor's expansion), which really makes me speechless.
 
 If you have any questions, please ask in issues.  
 If you find bugs, please let me know and I will debug them in time. Thank you.
