@@ -63,7 +63,7 @@ The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be availa
 The review speed is too slow!!! By the way, some reviewers have been struggling with some simple and well-known mathematical common sense (such as Taylor's expansion), which really makes me speechless.
 
 If you have any questions, please ask in issues.  
-If you find bugs, please let me know and I will debug them in time. Thank you.
+If you find bugs, please let me know and I will debug them in time. Thank you.  
 I will do my best to help you run this program successfully and get results close to those reported in the paper.  
 
 ## Something New
