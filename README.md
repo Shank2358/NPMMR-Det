@@ -8,7 +8,7 @@ If you use it, please cite our paper and give this project a star. Thank you.
 ## Environments
 Linux & Windows
 
-1. For RTX20/Titan RTX/V100 GPUs  
+1. For RTX20/Titan RTX/V100 GPUs （I have tested it on RTX2080Ti, Titan RTX, and Tesla V100 (16GB)）  
 cudatoolkit==10.0.130  
 numpy==1.17.3  
 opencv-python==3.4.2  
