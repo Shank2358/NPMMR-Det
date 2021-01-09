@@ -7,7 +7,8 @@ If you use it, please cite our paper and give this project a star. Thank you.
 Cloning this project without starring is a hooliganism。
 
 ## Environments
-Linux & Windows
+Linux (Ubuntu 18.04) & Windows (Win10) 
+CUDA 11.1, Cudnn 8.0.4
 
 1. For RTX20/Titan RTX/V100 GPUs （I have tested it on RTX2080Ti, Titan RTX, and Tesla V100 (16GB)）  
 cudatoolkit==10.0.130  
