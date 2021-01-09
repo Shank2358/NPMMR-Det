@@ -4,6 +4,7 @@ This is a PyTorch implementation of NPMMR-Det, YOLOv3, and YOLOv4.
 If you use it, please cite our paper and give this project a star. Thank you.
 
 ## Clone不Star， 都是耍流氓！
+Cloning this project without starring is a hooliganism。
 
 ## Environments
 Linux & Windows
