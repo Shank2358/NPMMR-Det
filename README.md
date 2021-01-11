@@ -65,7 +65,7 @@ Put them in. /weight folder
 
 ## Notice
 The Lightweight versions (MobileNetv2, ShuffleNetv2, GhostNet...) will be available soon after our paper is published.  
-The review speed is too slow!!! By the way, some reviewers have been struggling with some simple and well-known mathematical common sense (such as Taylor's expansion), which really makes me speechless.
+The review speed is too slow!!! By the way, some reviewers have been struggling with some simple and well-known mathematical common sense (such as Taylor's expansion), which really makes me speechless. Maybe they prefer the circuit-connected CNN model.
 
 If you have any questions, please ask in issues.  
 If you find bugs, please let me know and I will debug them in time. Thank you.  
@@ -98,16 +98,16 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ### 最近很懒，以后慢慢写...有时间的话会出更详细的使用教程和每行代码的注释，先凑合着看吧
 
-## 一些碎碎念（外国人就不要看了...虽然可能本来也没什么人看）
+## 一些不吐不快的东西（外国人就不要看了...虽然可能本来也没什么人看）
 初入遥感圈半年多，还在学习阶段，向各位大佬致敬，欢迎大家批评、交流，代码Bug请多包涵。  
 
 最近看遥感目标检测论文看得实在想吐槽一下，论文里动不动就SOTA，SOTA您倒是开源代码开源模型啊，别怂。开源但复现不出结果的都算很良心了（某知名遥感目标检测方法，论文报道mAP70+，开源代码开源模型跑出来60+）。至于除了公开mAP再公开一下模型检测速度和复杂度的要求我都觉得太过分了。    
 
-话说回来，遥感圈的巨佬们真是有钱，什么ResNet/ResNeXt-152/201的模型都能跑，刷榜刷不过你们我认（穷的瑟瑟发抖），求求你们慢一点，实在是跟不上，都是要发论文恰饭的，学术圈要以和为贵啊。  
+遥感圈的巨佬们真是有钱，什么ResNet/ResNeXt-152/201的模型都能跑，刷榜刷不过你们我认（穷的瑟瑟发抖），求求你们慢一点，实在是跟不上，都是要发论文恰饭的，学术圈要以和为贵啊。  
 
 NPMMR-Det这篇论文我自己其实很不满意，谈不上多大创新，算一个增量性的工作，堆砌了一些花里胡哨的CV那边玩剩下的东西，赶鸭子上架做的东西，欢迎多批评。入坑遥感目标检测半年多，看了一些论文，感觉大部分是在CV后面捡剩饭吃，拿过来换个数据就算创新，还有一些看起来明显就不讲武德的东西竟然能在遥感数据上涨点明显，这种炼丹技巧我也想学。至于各种train、val、test混合训练调参的我就不说啥了。  
 
-由于各种这样那样的我不可抗力的原因，NPMMR-Det论文里没能把带方向旋转框OBB的结果放上挺遗憾的，我觉得这也算遥感目标检测里面为数不多有特色的东西了，实际我做了这个实验在NPMMR-Det的基础上，DOTA数据集的mAP=73.83（544×544大小的输入，没有开多尺度测试，还可以刷到更高），我会尽快在这个仓库里更新的修改代码和训练好的权重。  
+由于各种这样那样的我不可抗力的原因，NPMMR-Det论文里没能把带方向旋转框OBB的结果放上挺遗憾的，我觉得这也算遥感目标检测里面为数不多有点特色的东西了，实际我做了这个实验在NPMMR-Det的基础上，DOTA数据集的mAP=73.83（544×544大小的输入，没有开多尺度测试，还可以刷到更高），我会尽快在这个仓库里更新的修改代码和训练好的权重。  
 ![image](https://github.com/Shank2358/NPMMR-Det/blob/master/figs_readme/DOTA_OBB.png)  
 
 DOTA数据集给的都是大尺寸的整张图像，预处理其实挺重要的（比如剪裁、数据清洗筛选什么的），这一块一直没有统一标准很多论文也不会公开他们的训练和测试数据，不同的预处理数据对最后结果的影响挺大的。偷偷告诉大家几个不违规的涨点小技巧（以下这些我没用，别人用没用我就不知道了，你们自己考量，反正卷的挺厉害的）：  
@@ -123,7 +123,7 @@ DOTA数据集给的都是大尺寸的整张图像，预处理其实挺重要的�
 （10）最新一些即插即用的模块还有attention也实现了一些，参考了SimpleCVReproduction这个项目，用这些彩蛋试试看吧，有好结果了欢迎分享，发论文了跪求引用一下我的论文，谢谢啊。  
 
 其他一些没研究明白的东西，欢迎讨论：  
-（1）DOTA的train set和val set的数据分布是不一样的，我简单统计了一下。然后val set和test set应该也是不一样，而且差的不少据我推测，因为我跑出来的现象是val set上面的分数是低于上传平台测出来的test set的分数的，然后我试过val上面不是取最优结果的权重去做测试，系统给的分数反而更高了。最后我没用val去调参，直接固定最大epoch，所有实验都测试最后五个epoch的结果取平均，懒得调参了，爱咋咋滴,反正卷不过。你们可以调参看看，应该是会涨点的。  
+（1）DOTA的train set和val set的数据分布是不一样的，我简单统计了一下。然后val set和test set应该也是不一样，而且差的不少据我推测，因为我跑出来的现象是val set上面的分数是低于上传平台测出来的test set的分数的，然后我试过val上面不是取最优结果的权重去做测试，系统给的分数反而更高了。最后我没用val去调参，直接固定最大epoch，其他参数和对比论文设置的一样（审稿人问参数怎么选的，我说原稿里解释过了和对比论文设置的一样保证公平，又追问说要更详细的解释选取原因，我能说做梦梦见的吗），所有实验都测试最后五个epoch的结果取平均，懒得调参了，爱咋咋滴，反正卷不过。你们可以调参看看，应该是会涨点的。  
 （2）DOTA数据集的直升机（HC）我的模型一直检测的不好，分挺低的，目前还没研究明白为什么，有的论文竟然70多分这一类，谁知道为什么烦请告诉我。  
 （3）桥梁这种好像大家都检测的不好，我也没想到啥好办法，不过可视化了一下train set发现...  
 （4）某些大组的论文，唉...一言难尽...    
@@ -135,6 +135,4 @@ DOTA数据集给的都是大尺寸的整张图像，预处理其实挺重要的�
 由于某度网盘会员到期了，训练好的模型只传了Google Drive，下个月发工资我就续上。  
 
 挖了个新坑，这个仓库不定期更新，有急事的话论文里的邮箱可以在工作时间联系到我，不急的可以在issues里面留言。
-
-半年了，不知道第一个点亮这个项目小星星的是谁，期待...
 
