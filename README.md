@@ -1,4 +1,6 @@
 # NPMMR-Det
+Refining Attention, Multiscale, and Multitask Misalignments of Object Detection in Remote Sensing Images  
+
 This is a PyTorch implementation of NPMMR-Det, YOLOv3, and YOLOv4.  
 
 If you use it, please cite our paper and give this project a star. Thank you.
