@@ -63,7 +63,7 @@ python test.py
 Modify ./cfg/cfg_npmmr.py, please refer to the comments in this file for details
 
 ## Weights
-The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing) [Baidu Disk](https://pan.baidu.com/s/1FQD7nUmXKTIljmiMHeHslg) password: gxzx 
+The pre-trained weights and trained models are available from [Google Drive](https://drive.google.com/drive/folders/1d9cT41TVg-Eae0CfMoPih8EgBMStZ4Jm?usp=sharing) or [Baidu Disk](https://pan.baidu.com/s/1FQD7nUmXKTIljmiMHeHslg) (password: gxzx)  
 Put them in. /weight folder
 
 ## Notice
