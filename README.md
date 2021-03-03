@@ -6,6 +6,7 @@
 This is a PyTorch implementation of [NPMMR-Det](https://ieeexplore.ieee.org/document/9364888), YOLOv3, and YOLOv4.  
 
 If you use it, please cite our paper and give this project a star. Thank you.  
+感谢你这么好看，还引用我们的论文~  
 
 Z. Huang, W. Li, X. -G. Xia, X. Wu, Z. Cai and R. Tao, "A Novel Nonlocal-Aware Pyramid and Multiscale Multitask Refinement Detector for Object Detection in Remote Sensing Images," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3059450.  
 
