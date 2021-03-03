@@ -9,15 +9,15 @@ If you use it, please cite our paper and give this project a star. Thank you.
 
 Z. Huang, W. Li, X. -G. Xia, X. Wu, Z. Cai and R. Tao, "A Novel Nonlocal-Aware Pyramid and Multiscale Multitask Refinement Detector for Object Detection in Remote Sensing Images," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3059450.  
 
-@ARTICLE{9364888,
-  author={Z. {Huang} and W. {Li} and X. -G. {Xia} and X. {Wu} and Z. {Cai} and R. {Tao}},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={A Novel Nonlocal-Aware Pyramid and Multiscale Multitask Refinement Detector for Object Detection in Remote Sensing Images}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={1-20},
-  doi={10.1109/TGRS.2021.3059450}}  
+@ARTICLE{9364888,  
+  author={Z. {Huang} and W. {Li} and X. -G. {Xia} and X. {Wu} and Z. {Cai} and R. {Tao}},  
+  journal={IEEE Transactions on Geoscience and Remote Sensing},   
+  title={A Novel Nonlocal-Aware Pyramid and Multiscale Multitask Refinement Detector for Object Detection in Remote Sensing Images},   
+  year={2021},  
+  volume={},  
+  number={},  
+  pages={1-20},  
+  doi={10.1109/TGRS.2021.3059450}}    
   
 ## Cloning this project without starring is a hooliganism
 ## Clone不Star，都是耍流氓！
@@ -116,10 +116,6 @@ This project is released under the [Apache 2.0 license](LICENSE).
 ## 一些碎碎念，仅代表本人个人观点（外国人就不要看了...虽然可能本来也没什么人看）
 初入遥感圈大半年，还在学习阶段，向各位大佬致敬，欢迎大家批评、交流，代码Bug请多包涵。  
 
-最近看遥感目标检测论文看得实在想吐槽一下，论文里动不动就SOTA，SOTA您倒是开源代码开源模型啊，别怂。开源但复现不出结果的都算很良心了（某知名遥感目标检测方法，论文报道mAP70+，开源代码开源模型跑出来60+; 某知名大组大佬论文，搞了个传统算法+CNN的组合模块，反向传播明显不可导，代码没开源，也不知道是不是做了什么近似，反正结果很符合大佬的身份）。至于除了公开mAP再公开一下模型检测速度和复杂度的要求我都觉得太过分了。    
-
-遥感圈的巨佬们真是有钱，什么ResNet/ResNeXt-152/201的模型都能跑，刷榜刷不过你们我认（穷的瑟瑟发抖），求求你们慢一点，实在是跟不上，都是要发论文恰饭的，学术圈要以和为贵啊。  
-
 NPMMR-Det这篇论文算一个增量性的工作，谈不上多大创新，是一个赶鸭子上架做的东西，堆砌了一些花里胡哨的CV那边玩剩下的东西，欢迎多批评。入坑遥感目标检测半年多，看了一些论文，感觉大部分是在CV后面捡剩饭吃，拿过来换个数据就算创新，还有一些看起来明显就不讲武德的东西竟然能在遥感数据上涨点明显，这种炼丹技巧我也想学。至于各种train、val、test混合训练调参的我就不说啥了。  
 
 由于各种这样那样的我不可抗力的原因，NPMMR-Det论文里没能把带方向旋转框OBB的结果放上挺遗憾的，我觉得这也算遥感目标检测里面为数不多有点特色的东西了，实际我做了这个实验在NPMMR-Det的基础上，DOTA数据集的mAP=73.83（544×544大小的输入，没有开多尺度测试，还可以刷到更高），我会尽快在这个仓库里更新的修改代码和训练好的权重。  
@@ -147,7 +143,11 @@ DOTA数据集给的都是大尺寸的整张图像，预处理其实挺重要的�
 （7）Windows系统下编译DCN要记得装一个Microsoft Visual C++ Build Tools(微软官网可以下载)，有遇到BUG就在issues里面给我留言。  
 （8）NPMMR-Det论文的算法偏复杂，torch转ONNX和TensorRT的代码快写哭我了（好多要从头写），这个短期内更新不了，科研论文党没有影响直接拿去用吧，工业应用党我暂时不推荐你们用这个仓库（至少不推荐完全版的算法，把DCN还有Attention那里去掉吧）。有没有大佬可以帮帮我，我会在这个项目里把你的名字加上。  
 
-由于某度网盘会员到期了，训练好的模型只传了Google Drive，下个月发工资我就续上。  
+由于某度网盘会员到期了，训练好的模型只传了Google Drive，下个月发工资我就续上。 
+
+最近看遥感目标检测论文看得实在想吐槽一下，论文里动不动就SOTA，SOTA您倒是开源代码开源模型啊，别怂。开源但复现不出结果的都算很良心了（某知名遥感目标检测方法，论文报道mAP70+，开源代码开源模型跑出来60+; 某知名大组大佬论文，搞了个传统算法+CNN的组合模块，反向传播明显不可导，代码没开源，也不知道是不是做了什么近似，反正结果很符合大佬的身份）。至于除了公开mAP再公开一下模型检测速度和复杂度的要求我都觉得太过分了。    
+
+遥感圈的巨佬们真是有钱，什么ResNet/ResNeXt-152/201的模型都能跑，刷榜刷不过你们我认（穷的瑟瑟发抖），求求你们慢一点，实在是跟不上，都是要发论文恰饭的，学术圈要以和为贵啊。  
 
 某十项全能大神的论文我真是一篇都不想再见到了，大佬就应该起到正确的示范作用，别整的跟连续剧一样发一系列编故事都漏洞百出的模型。  
 
