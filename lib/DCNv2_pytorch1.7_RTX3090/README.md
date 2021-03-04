@@ -3,13 +3,6 @@
 ### Build
 ```bash
     ./make.sh         # build
-    python testcpu.py    # run examples and gradient check on cpu
-    python testcuda.py   # run examples and gradient check on gpu 
-```
-### Note
-Now the master branch is for pytorch 1.x, you can switch back to pytorch 0.4 with,
-```bash
-git checkout pytorch_0.4
 ```
 
 ### Known Issues:
