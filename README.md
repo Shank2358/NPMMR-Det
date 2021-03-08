@@ -63,7 +63,7 @@ sh make.sh
 2. [DIOR dataset](https://pan.baidu.com/share/init?surl=w8iq2WvgXORb3ZEGtmRGOw), password: 554e  
 (1) VOC Format  
 You need to write a script to convert them into the train.txt file required by this repository and put them in the ./data folder.  
-For the specific format of the train.txt file, see the example in the /data folder.
+For the specific format of the train.txt file, see the example in the /data folder.  
 (2) MSCOCO Format  
 put the .json file in the ./data folder.
 
