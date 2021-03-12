@@ -6,7 +6,8 @@
 This is a PyTorch implementation of [NPMMR-Det](https://ieeexplore.ieee.org/document/9364888), YOLOv3, and YOLOv4.  
 
 ## Citation
-If you use it, please give this project a star and consider citing:
+If you use it, please give this project a star and consider citing: 
+
 @ARTICLE{9364888,  
   author={Z. {Huang} and W. {Li} and X. -G. {Xia} and X. {Wu} and Z. {Cai} and R. {Tao}},  
   journal={IEEE Transactions on Geoscience and Remote Sensing},   
