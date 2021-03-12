@@ -18,7 +18,7 @@ If you use it, please give this project a star and consider citing:
   pages={1-20},  
   doi={10.1109/TGRS.2021.3059450}} 
   
-Cloning this project without starring is a hooliganism
+Cloning this project without starring is a hooliganism.  
 Clone不Star，都是耍流氓！
 
 ## Environments
