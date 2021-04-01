@@ -20,8 +20,7 @@ If you use it, please give this project a star and consider citing:
   
 Clone不Star，都是耍流氓~
 
-## The lightweight and Oriented-BBoxes version will soon be availabel (2021.3.31)
-LO-Det [devkit](https://github.com/Shank2358/LO-Det)  
+## The lightweight and Oriented-BBoxes version [LO-Det](https://github.com/Shank2358/LO-Det) will soon be availabel (2021.3.31)
 
 LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images  
 
