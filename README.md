@@ -20,6 +20,22 @@ If you use it, please give this project a star and consider citing:
   
 Clone不Star，都是耍流氓~
 
+## The lightweight and Oriented-BBoxes version (2021.3.31)
+LO-Det [devkit](https://github.com/Shank2358/LO-Det)  
+
+LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images  
+
+@ARTICLE{9390310,
+  author={Z. {Huang} and W. {Li} and X. -G. {Xia} and H. {Wang} and F. {Jie} and R. {Tao}},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-15},
+  doi={10.1109/TGRS.2021.3067470}}
+
+
 ## Environments
 Linux (Ubuntu 18.04, GCC>=5.4) & Windows (Win10, VS2019)   
 CUDA 11.1, Cudnn 8.0.4
