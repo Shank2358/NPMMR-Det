@@ -21,7 +21,7 @@ If you use it, please give this project a star and consider citing:
 Clone不Star，都是耍流氓~
 
 ## The lightweight and Oriented-BBoxes version [LO-Det](https://github.com/Shank2358/LO-Det) has been released (2021.3.31) 
-## The NPMMRDet-Oriented_Bounding_Boxes version has also been released (2021.4.29)  
+## The NPMMRDet-Oriented_Bounding_Boxes version has also been released in [LO-Det](https://github.com/Shank2358/LO-Det) (2021.4.29)  
 
 LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images  
 
