@@ -134,7 +134,7 @@ NPMMR-Det这篇论文算一个增量性的工作，谈不上多大创新，是�
 
 由于各种这样那样的我不可抗力的原因，NPMMR-Det论文里没能把带方向旋转框OBB的结果放上挺遗憾的，我觉得这也算遥感目标检测里面为数不多有点特色的东西了，实际我做了这个实验在NPMMR-Det的基础上，DOTA数据集的mAP=73.83（544×544大小的输入，没有开多尺度测试，还可以刷到更高），我会尽快在这个仓库里更新的修改代码和训练好的权重。  
 ![image](https://github.com/Shank2358/NPMMR-Det/blob/master/figs_readme/DOTA_OBB.png)  
-2020.3.1：过年期间调了调参，OBB的mAP能到76以上了，模型权重也传到网盘了，代码我还没封装好稍后更新。
+2020.3.1：过年期间调了调参，OBB的mAP能到76以上了，模型权重也传到网盘了，代码我还没封装好稍后更新。(4.29更新了)
 ![image](https://github.com/Shank2358/NPMMR-Det/blob/master/figs_readme/DOTA_OBB_new.png)  
  
  一些也许你们可以试试的涨点小技巧，我有时间了也会尝试这些然后把最新的结果在这里更新。  
