@@ -125,6 +125,8 @@ https://github.com/pprp/SimpleCVReproduction
 ## License
 This project is released under the [Apache 2.0 license](LICENSE).
 
+### 暑假會有大版本更新，提前預告一下。
+
 ### 最近很懒，以后慢慢写...有时间的话会出更详细的使用教程和每行代码的注释，先凑合着看吧
 
 ## 一些碎碎念，仅代表本人个人观点（外国人就不要看了...虽然可能本来也没什么人看）
