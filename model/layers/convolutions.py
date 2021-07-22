@@ -2,7 +2,6 @@ from .activations import *
 from dcn_v2 import DCN
 from ..plugandplay.DynamicConv import Dynamic_conv2d
 from ..plugandplay.CondConv import CondConv2d, route_func
-from ..layers.directional_dynamic_convolution import *
 
 norm_name = {"bn": nn.BatchNorm2d}
 activate_name = {
@@ -183,57 +182,6 @@ class Dynamic_Convolutional(nn.Module):
         self.activate = activate
         self.__conv = Dynamic_conv2d(in_planes=filters_in, out_planes=filters_out, kernel_size=kernel_size,
                                      ratio=0.25, stride=stride, padding=pad, dilation=dila, groups=groups, bias=bias, K=K, temperature=temperature, init_weight=True)
-        if norm:
-            assert norm in norm_name.keys()
-            if norm == "bn":
-                self.__norm = norm_name[norm](num_features=filters_out)
-        if activate:
-            assert activate in activate_name.keys()
-            if activate == "leaky":
-                self.__activate = activate_name[activate](negative_slope=0.1, inplace=True)
-            if activate == "relu":
-                self.__activate = activate_name[activate](inplace=True)
-            if activate == "relu6":
-                self.__activate = activate_name[activate](inplace=True)
-            if activate == "Mish":
-                self.__activate = Mish()
-            if activate == "Swish":
-                self.__activate = Swish()
-            if activate == "MEMish":
-                self.__activate = MemoryEfficientMish()
-            if activate == "MESwish":
-                self.__activate = MemoryEfficientSwish()
-            if activate == "FReLu":
-                self.__activate = FReLU()
-
-    def forward(self, x):
-        x = self.__conv(x)
-        if self.norm:
-            x = self.__norm(x)
-        if self.activate:
-            x = self.__activate(x)
-        return x
-
-class Directional_Dynamic_Convolutional(nn.Module):
-    def __init__(self, filters_in, filters_out, kernel_size, stride=1, pad=0, dila=1, groups=1, bias=True, type='tri', temperature=34, norm=None, activate=None):
-
-        super(Directional_Dynamic_Convolutional, self).__init__()
-        self.norm = norm
-        self.activate = activate
-
-        if type =='tri':
-            self.__conv = Directional_Dynamic_Conv2d_Triangle(in_planes=filters_in, out_planes=filters_out, kernel_size=kernel_size, ratio=0.25, stride=stride,
-                                         padding=pad, dilation=dila, groups=groups, bias=bias, temperature=temperature, init_weight=True)
-        if type =='tri_sw':
-            self.__conv = Directional_Dynamic_Conv2d_Triangle_SW(in_planes=filters_in, out_planes=filters_out, kernel_size=kernel_size, ratio=0.25, stride=stride,
-                                         padding=pad, dilation=dila, groups=groups, bias=bias, temperature=temperature, init_weight=True)
-        if type =='rect_sw':
-            self.__conv = Directional_Dynamic_Conv2d_SW(in_planes=filters_in, out_planes=filters_out, kernel_size=kernel_size, ratio=0.25, stride=stride,
-                                         padding=pad, dilation=dila, groups=groups, bias=bias, temperature=temperature, init_weight=True)
-        if type == 'rect':
-            self.__conv = Dynamic_conv2d(in_planes=filters_in, out_planes=filters_out, kernel_size=kernel_size,
-                                     ratio=0.25, stride=stride, padding=pad, dilation=dila, groups=groups, bias=bias, K=K, temperature=temperature, init_weight=True)
-
         if norm:
             assert norm in norm_name.keys()
             if norm == "bn":
