@@ -20,6 +20,9 @@ If you use it, please give this project a star and consider citing:
   
 Clone不Star，都是耍流氓~
 
+#### 👾 I was busy updating the GGHL repository recently, so this repository was ignored. I will continue to update it next week. 
+最近忙着更新GGHL仓库，这边没顾上。下周会陆续开始更新这边的内容。
+
 ## The lightweight and Oriented-BBoxes version [LO-Det](https://github.com/Shank2358/LO-Det) has been released (2021.3.31) 
 ## The NPMMRDet-Oriented_Bounding_Boxes version has also been released in [LO-Det](https://github.com/Shank2358/LO-Det) (2021.4.29)  
 
