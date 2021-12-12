@@ -28,15 +28,15 @@ Clone不Star，都是耍流氓~
 
 LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images  
 
-@ARTICLE{9390310,
-  author={Z. {Huang} and W. {Li} and X. -G. {Xia} and H. {Wang} and F. {Jie} and R. {Tao}},  
-  journal={IEEE Transactions on Geoscience and Remote Sensing},   
-  title={LO-Det: Lightweight Oriented Object Detection in Remote Sensing Images},   
-  year={2021},  
-  volume={},  
-  number={},  
-  pages={1-15},  
-  doi={10.1109/TGRS.2021.3067470}}  
+@ARTICLE{9364888,
+  author={Huang, Zhanchao and Li, Wei and Xia, Xiang-Gen and Wu, Xin and Cai, Zhaoquan and Tao, Ran},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={A Novel Nonlocal-Aware Pyramid and Multiscale Multitask Refinement Detector for Object Detection in Remote Sensing Images}, 
+  year={2022},
+  volume={60},
+  number={},
+  pages={1-20},
+  doi={10.1109/TGRS.2021.3059450}}
 
 
 
