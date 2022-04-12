@@ -44,7 +44,6 @@ class Evaluator(object):
         for img_ind in tqdm(img_inds):
             i=i+1
             img_path = os.path.join(self.val_data_path, 'JPEGImages', img_ind+'.jpg') ##DOTA数据集图片后缀是.png
-            #目标： 直接改成读txt的文件名，每一行读取
             img = cv2.imread(img_path)
             bboxes_prd = self.get_bbox(img, multi_test, flip_test)
 
@@ -71,6 +70,56 @@ class Evaluator(object):
                 with open(os.path.join(self.pred_result_path, 'voc', 'comp4_det_test_' + class_name + '.txt'), 'a') as f2:
                     f2.write(s)
                 f1.write("%s %s %s %s %s %s\n" % (class_name, score, str(xmin), str(ymin), str(xmax), str(ymax)))
+                '''结果可视化
+                color = np.zeros(3)
+                if int(class_ind) == 0:
+                    # 25 black
+                    color = (64, 0, 0)
+                elif int(class_ind) == 1:
+                    # 1359 blue
+                    color = (255, 0, 0)
+                elif int(class_ind) == 2:
+                    # 639 Yellow
+                    color = (0, 255, 255)
+                elif int(class_ind) == 3:
+                    # 4371 red
+                    color = (0, 0, 255)
+                elif int(class_ind) == 4:
+                    # 3025 green
+                    color = (0, 255, 0)
+                elif int(class_ind) == 5:
+                    # 1359 blue
+                    color = (255, 0, 0)
+                elif int(class_ind) == 6:
+                    # 639 Yellow
+                    color = (0, 128, 255)
+                elif int(class_ind) == 7:
+                    # 4371 red
+                    color = (0, 0, 128)
+                elif int(class_ind) == 8:
+                    # 3025 green
+                    color = (0, 128, 0)
+                elif int(class_ind) == 9:
+                    # 1359 blue
+                    color = (128, 0, 0)
+                elif int(class_ind) == 10:
+                    # 639 Yellow
+                    color = (128, 128, 0)
+                elif int(class_ind) == 11:
+                    # 4371 red
+                    color = (0, 128, 128)
+                elif int(class_ind) == 12:
+                    # 3025 green
+                    color = (128, 128, 0)
+                elif int(class_ind) == 13:
+                    # 1359 blue
+                    color = (0, 255, 128)
+                elif int(class_ind) == 14:
+                    # 639 Yellow
+                    color = (255, 128, 255)
+                cv2.rectangle(img, (int(xmin), int(ymin)), (int(xmax), int(ymax)), color, 2)
+            store_path = os.path.join(self.pred_result_path, 'imgs', img_ind + '.png')
+            cv2.imwrite(store_path, img, [int(cv2.IMWRITE_JPEG_QUALITY), 100])'''     
             f1.close()
         self.inference_time = 1.0 * self.inference_time/ len(img_inds)
         return self.__calc_APs(), self.inference_time
