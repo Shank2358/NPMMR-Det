@@ -42,20 +42,25 @@ def convert_voc_annotation(data_path, data_type, anno_path, use_difficult_bbox=T
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    #default 更改为你自己数据集VOC的目录
-    parser.add_argument("--data_path", default="/mnt/Datasets/DIOR/")
-    #default 更改为voc_train.txt的存放的位置
-    parser.add_argument("--val_annotation", default="val111.txt")
-    #parser.add_argument("--train_annotation", default="train.txt")
-    #parser.add_argument("--test_annotation",  default="voc_testadd.txt")
+    parser.add_argument("--data_path", default="/mnt/Datasets/DIOR/") ##the path of DIOR dataset: /mnt/Datasets/DIOR/
+    '''
+        DATA_PATH = "/mnt/Datasets/DIOR/"
+        ├── ...
+        ├── JPEGImages
+        |   ├── 000001.jpg
+        |   ├── 000002.jpg
+        |   └── ...
+        ├── Annotations
+        |   ├── 000001.xml
+        |   ├── 000002.xml
+        |   └── ...
+        ├── ImageSets
+            ├── test.txt (testing filename)
+                ├── 000001
+                ├── 000002
+                └── ...
+    '''
+    #parser.add_argument("--train_annotation", default="/mnt/Datasets/DIOR/train.txt")##the output path of train set
     flags = parser.parse_args()
-
-    #if os.path.exists(flags.train_annotation):os.remove(flags.train_annotation)
-    if os.path.exists(flags.val_annotation): os.remove(flags.val_annotation)
-    #if os.path.exists(flags.test_annotation):os.remove(flags.test_annotation)
-
-    #更改训练集和测试集的相对路径
-    num1 = convert_voc_annotation(os.path.join(flags.data_path), 'val', flags.val_annotation, False)
-    #num2 = convert_voc_annotation(os.path.join(flags.data_path), 'train', flags.train_annotation, False)
-    #num3 = convert_voc_annotation(os.path.join(flags.data_path),  'test', flags.test_annotation, False)
-    #print('=> The number of image for train is: %d\tThe number of image for test is:%d' %(num1 , num3))
+    if os.path.exists(flags.train_annotation):os.remove(flags.train_annotation)
+    num = convert_voc_annotation(os.path.join(flags.data_path), 'train', flags.train_annotation, False) #convert xml to txt
